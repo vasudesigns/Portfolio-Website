@@ -1,3 +1,125 @@
+/*
+Colors used:
+Primary Color (sage green): #8aad97;
+Secondary Color (blue): #393baf;
+*/
+
 body {
-    background: color #d6c6ac;
+    background-color: #ded9d5;
+    font-family: "lora", serif;
+    font-size: 16px;
+    /*set the font size to 16*/
+    font-weight: 300;
+    /* sets the font weight to 300*/
+    line-height: 1.6;
+    /* sets the line-hight to 1.6* the font-size */
+    color: #000000;
 }
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:hover {
+color: rgb(31, 41, 129);
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+.button {
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #8AAD97;
+    color: #ffffff;
+    /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #083317;
+    /* width of the border, type, color */
+    transition: 0.2s opacity;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.button:active {
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: transparent;
+    color: #393baf;
+    text-transform: uppercase;
+    border: 2px solid #3c57db;
+}
+
+.button.contact:hover {
+    background-color: #71a9d1;
+    color: #ffffff;
+}
+
+code {
+    background-color: black;
+    color: #b4d455;
+    padding: 5px;
+}
+
+/* custom classes to help  */
+.makeUppercase {
+    text-transform: uppercase;
+}
+
+.makeLowercase {
+    text-transform: lowercase;
+}
+
+.underlineMe {
+    text-decoration: underline;
+}
+
+/* id styles */
+#hero, h3 + p {
+    background-color: rgb(159, 145, 126);
+}
+/* combinators */
+/* h3 + p {
+  background-color: rgb(159, 145, 126);
+}   */
