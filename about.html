@@ -15,25 +15,27 @@
 
 <body>
     <header>
-        <a href="./index.html"><img src="img/Logo.png" alt="Logo"></a>
+        <div class="container">
+        <a href="./index.html"><img class="logo" src="img/Logo.png" alt="Logo"></a>
         <nav>
-            <ul>
+            <ul class="right">
                 <li><a href="./index.html#myWork">Work</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="#contact" target="_blank">Contact</a></li>
             </ul>
         </nav>
+        </div>
     </header>
     <main>
-        <div id="aboutme">
+        <div class="container" center id="aboutme">
             <h1>About Me</h1>
-            <div>
+            <div class="row">
                 <picture>
                     <source srcset="img/Vishakha-mobile-device.png" media="(max-width:767px)">
                     <img src="img/Vishakha.png" alt="My photo">
                 </picture>
             </div>
-            <div>
+            <div class="row">
                 <h2>My Story</h2>
                 <p>I’m a UI/UX designer who brings together logic, empathy, and visual storytelling. With a
                     background
@@ -63,8 +65,7 @@
                     development and exploring visual storytelling.</p>
                 <a href="files/CV.pdf" download>Download My CV</a>
             </div>
-            <br>
-            <div>
+            <div class="row">
                 <h2>Skills & Tools</h2>
                 <div>
                     <h3>Relevant Skills</h3>
@@ -95,21 +96,21 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div id="contact">
+    <footer id="contact">
+        <div class="container">
             <div>
                 <h2>Get in Touch</h2>
             </div>
-            <div>
+            <div class="row">
                 <p> Do you like my work and want to discuss opportunities? Please get in touch. Call:
                     <a href="tel:+491234567">+49 1234567</a>. Prefer sending an email?
                 </p>
             </div>
-            <div>
-                <a href="mailto:vishakha.sureja@gmail.com">Send Email</a>
+            <div class="center row">
+                <a href="mailto:vishakha.sureja@gmail.com" class="button contact">Send me an Email</a>
             </div>
-            <br>
-            <div>
+         
+            <div class="center row">
                 <a href="https://www.behance.net/vishakhasureja" target="_blank">
                     <img src="img/behance.svg" height="30px" alt="behance">
                 </a>

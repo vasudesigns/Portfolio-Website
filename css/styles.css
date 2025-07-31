@@ -3,17 +3,29 @@ Colors used:
 Primary Color (sage green): #8aad97;
 Secondary Color (blue): #393baf;
 */
+header {
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    background: #ded9d5;
+    border-bottom: solid #BDBDBD 2px;
+}
 
 body {
     background-color: #ded9d5;
     font-family: "lora", serif;
-    font-size: 16px;
+    font-size: 12px;
     /*set the font size to 16*/
     font-weight: 300;
     /* sets the font weight to 300*/
     line-height: 1.6;
     /* sets the line-hight to 1.6* the font-size */
     color: #000000;
+    margin: 0px;
+}
+
+main {
+    padding-top: 100px;
 }
 
 h1,
@@ -26,11 +38,13 @@ h4 {
 h1 {
     font-size: 2.75em;
     font-weight: 700;
+    margin: 0 auto;
 }
 
 h2 {
     font-size: 2.25em;
     font-weight: 700;
+    text-align: center;
 }
 
 h3 {
@@ -43,22 +57,34 @@ h4 {
     font-weight: 400;
 }
 
+.h3-dark {
+    font-weight: 500;
+}
+
 img {
     width: 100%;
 }
+
 a {
-  color: #ff7f50;
-  text-decoration: none; /* No underlining */
+    color: #ff7f50;
+    text-decoration: none;
+    /* No underlining */
 }
-a:visited { /* visited link */
-  color: #ff7f50;
+
+a:visited {
+    /* visited link */
+    color: #ff7f50;
 }
+
 a:hover {
-color: rgb(31, 41, 129);
+    color: rgb(31, 41, 129);
 }
-a:active { /* selected link */
-  color: #994c30;
+
+a:active {
+    /* selected link */
+    color: #994c30;
 }
+
 .button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -115,11 +141,60 @@ code {
     text-decoration: underline;
 }
 
-/* id styles */
-#hero, h3 + p {
-    background-color: rgb(159, 145, 126);
+.center {
+    text-align: center;
 }
-/* combinators */
-/* h3 + p {
-  background-color: rgb(159, 145, 126);
-}   */
+
+.right {
+    text-align: right;
+}
+
+/* layout styling  */
+.container {
+    padding: 0 15px;
+
+}
+
+.row {
+    margin: 25px 0;
+}
+
+.logo {
+    max-width: 50px;
+
+}
+
+nav {
+    display: inline-block;
+
+}
+
+nav>ul {
+    list-style-type: none;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    color: #000000 !important;
+}
+
+a > img {
+   width: 20%;
+}
+
+.css-box-shadow {
+    /*start ------------*/
+    width: [object Object]px;
+    height: [object Object]px;
+    background: #F8F8F8;
+    border: solid #BDBDBD 1px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
