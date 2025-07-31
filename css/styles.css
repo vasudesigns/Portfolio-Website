@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.75;
+    font-size: 1.75em;
     font-weight: 400;
 }
 
@@ -180,7 +180,7 @@ nav>ul>li {
 nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-weight: 700px;
+    font-weight: 700;
     color: #000000 !important;
 }
 
@@ -188,13 +188,6 @@ a > img {
    width: 20%;
 }
 
-.css-box-shadow {
-    /*start ------------*/
-    width: [object Object]px;
-    height: [object Object]px;
-    background: #F8F8F8;
-    border: solid #BDBDBD 1px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+.footer-image {
+    height: 30px;
 }
