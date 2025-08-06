@@ -46,6 +46,7 @@ h2 {
     font-size: 2.0em;
     font-weight: 700;
     text-align: center;
+    padding-top: 30px;
 }
 
 h3 {
@@ -67,18 +68,17 @@ img {
 }
 
 a {
-    color: #ff7f50;
+
     text-decoration: none;
     /* No underlining */
-}
+    transition-duration: 0.5s;
+    transition-property: color;
 
-a:visited {
-    /* visited link */
-    color: #ff7f50;
 }
 
 a:hover {
-    color: rgb(31, 41, 129);
+    color: #994c30;
+
 }
 
 a:active {
@@ -88,22 +88,19 @@ a:active {
 
 .button {
     display: inline-block;
-    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #8AAD97;
-    color: #ffffff;
-    /* needed to override the default link color */
+    background-color: #a58f7c;
+    color: white;
     font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #083317;
-    /* width of the border, type, color */
-    transition: 0.2s opacity;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+    border-bottom: 2px solid #7a6450;
+    transition-duration: 0.5s;
+    transition-property: opacity;
 }
 
 .button:hover {
-    opacity: 0.6;
-    text-decoration: none;
+    opacity: 0.7;
 }
 
 .button:active {
@@ -194,7 +191,7 @@ nav>ul>li {
 nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 500;
     color: #000000 !important;
 }
 
@@ -204,8 +201,72 @@ a>img {
 
 .footer-image {
     height: 30px;
+    padding: 20px 0;
 }
 
+.berlin {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.berlin-desc {
+    padding-top: 150px
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -224,10 +285,16 @@ Medium devices (640px and larger)
 
     .col-md-6 {
         width: 50%;
+        padding: 0 30px;
+        
     }
 
     #aboutme h3 {
         margin-top: 0;
+    }
+
+    a>img {
+        width: 15%;
     }
 
 }
@@ -246,10 +313,16 @@ Large devices (1024px or larger)
 
     .col-lg-7 {
         width: 60%;
+        padding: 0 30px;
     }
 
     .col-lg-5 {
         width: 40%;
+        padding: 0 30px;
+    }
+
+    a>img {
+        width: 10%;
     }
 }
 
