@@ -4,11 +4,11 @@ Primary Color (sage green): #8aad97;
 Secondary Color (blue): #393baf;
 */
 header {
-    padding: 10px 0;
     position: fixed;
     width: 100%;
     background: #ded9d5;
     border-bottom: solid #BDBDBD 2px;
+    box-shadow: 0px 0px 15px 2px rgba(66, 66, 66, 0.4);
     padding: 10px 0 4px;
 }
 
@@ -149,8 +149,8 @@ code {
 
 /* layout styling  */
 .container {
-    padding: 0 15px;
-    max-width: 1200px;
+    padding: 0 25px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -173,6 +173,13 @@ code {
 .logo {
     max-width: 50px;
 
+}
+
+.copyright {
+    font-size: 0.85em;
+    color: #4e4e4e;
+    font-weight: 200;
+    text-align: center;
 }
 
 nav>ul {
@@ -228,19 +235,41 @@ a>img {
     width: 20%;
 }
 
+.about-content picture img {
+    max-width: 400px;
+    /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    padding-left: 20px;
+}
+
 .footer-image {
     height: 30px;
     padding: 20px 0;
 }
 
-.berlin {
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 100%;
-    height: auto;
 }
 
-.berlin-desc {
-    padding-top: 150px
+#austin_animation {
+    width: 100%;
+    /* Ensure it's responsive on mobile */
+    max-width: 400px;
+    /* Limit its max size on smaller screens to prevent overflow */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Important for centering */
+    margin: 0 auto;
+    /* Center horizontally on mobile */
+    object-fit: contain;
+    /* Prevents distortion, good for SVGs */
+    max-height: none;
 }
 
 @keyframes color-change {
@@ -305,6 +334,10 @@ Medium devices (640px and larger)
         padding: 20px 0 13px;
     }
 
+    .container {
+        padding: 0 50px;
+    }
+
     nav {
         width: auto;
         float: right;
@@ -337,7 +370,6 @@ Medium devices (640px and larger)
     a>img {
         width: 15%;
     }
-
 }
 
 /* ==============================
@@ -346,6 +378,10 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
     body {
         font-size: 18px;
+    }
+
+    .container {
+        padding: 0 150px;
     }
 
     #hero span {
@@ -365,6 +401,14 @@ Large devices (1024px or larger)
     a>img {
         width: 10%;
     }
+
+    .about-content picture {
+        float: right;
+        max-width: 450px;
+        margin-right: 20px;
+        /* Add space between image and text */
+    }
+
 }
 
 /* ==============================
