@@ -68,17 +68,14 @@ img {
 }
 
 a {
-
     text-decoration: none;
     /* No underlining */
     transition-duration: 0.5s;
     transition-property: color;
-
 }
 
 a:hover {
     color: #f2eeed;
-
 }
 
 a:active {
@@ -165,6 +162,14 @@ code {
     display: table;
 }
 
+.project-container {
+    border: solid #BDBDBD 2px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 2px rgba(66, 66, 66, 0.4);
+    padding: 25px 50px;
+    margin: 25px 0;
+}
+
 [class*="col-"] {
     float: left;
     padding: 0 10px;
@@ -172,7 +177,6 @@ code {
 
 .logo {
     max-width: 50px;
-
 }
 
 .copyright {
@@ -359,8 +363,7 @@ Medium devices (640px and larger)
 
     .col-md-6 {
         width: 50%;
-        padding: 0 30px;
-
+        padding: 0 30px 0 0;
     }
 
     #aboutme h3 {
@@ -390,12 +393,12 @@ Large devices (1024px or larger)
 
     .col-lg-7 {
         width: 60%;
-        padding: 0 30px;
+        padding: 0 30px 0 0;
     }
 
     .col-lg-5 {
         width: 40%;
-        padding: 0 30px;
+        padding: 0 30px 0 0;
     }
 
     a>img {
