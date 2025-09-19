@@ -24,9 +24,20 @@ body {
   /* sets the line-hight to 1.6* the font-size */
   color: #000000;
   margin: 0px;
+  background-color: #ded9d5;
+  font-family: 'lora', serif;
+  font-size: 16px;
+  /*set the font size to 16*/
+  font-weight: 300;
+  /* sets the font weight to 300*/
+  line-height: 1.6;
+  /* sets the line-hight to 1.6* the font-size */
+  color: #000000;
+  margin: 0px;
 }
 
 main {
+  padding-top: 135px;
   padding-top: 135px;
 }
 
@@ -34,6 +45,7 @@ h1,
 h2,
 h3,
 h4 {
+  line-height: 1.4;
   line-height: 1.4;
 }
 
@@ -306,6 +318,7 @@ a>img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #austin_animation {
