@@ -22,16 +22,16 @@ setFlipCardHeight();
 document.querySelectorAll('.flip-card').forEach(card => {
   card.addEventListener('click', function () {
     card.classList.toggle('flipped');
-    setTimeout(setFlipCardHeight, 400);
+    setFlipCardHeight();
   });
 });
+
+window.addEventListener('resize', setFlipCardHeight);
 
 function setFlipCardHeight() {
   document.querySelectorAll('.flip-card-inner').forEach(card => {
     const front = card.querySelector('.flip-card-front');
-    console.log(front.scrollHeight);
     const back = card.querySelector('.flip-card-back');
-    console.log(front.scrollHeight);
     const parent = card.closest('.flip-card');
     if (parent.classList.contains('flipped')) {
       card.style.height = back.scrollHeight + 'px';
