@@ -39,4 +39,10 @@ function setFlipCardHeight() {
       card.style.height = front.scrollHeight + 'px';
     }
   });
+
+  document.querySelectorAll('.view-portfolio').forEach(btn => {
+    btn.addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+  });
 }
